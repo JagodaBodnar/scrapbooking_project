@@ -1,0 +1,15 @@
+export const mainGlobalStyles = {
+  white: "#fff",
+  mainBlue: "#2e92ee",
+  brightBlue: "#BBF1FA",
+  textColor: "#292929",
+  iconsBorder: "#ddd",
+  inputBorder: "#ddd",
+  iconsBackground: "#888",
+  mobileMenuBlue: "rgba(15, 48, 87, 1)",
+  mobileMenuBorder: "#30475e",
+  sectionHeader: "#191a1c",
+  sectionDarkBackground: "#f7f7f7",
+  whiteTransparent: "rgba(255, 255, 255, 0.9)",
+  blueTransparent: "rgba(190, 220, 250, 0.9)",
+};
