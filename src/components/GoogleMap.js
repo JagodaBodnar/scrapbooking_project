@@ -75,5 +75,5 @@ const MapContainer = ({ google }) => {
   );
 };
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyAmZqiVIpl65bpqc3enoqMSn8Rhzdor2yY",
+  apiKey: process.env.REACT_APP_GOOGLE_MAPS_KEY,
 })(MapContainer);
