@@ -24,12 +24,18 @@ export const StyledSpan = styled.span`
   font-size: 40px;
   font-weight: 700;
   line-height: 60px;
+  @media ${device.mobileS} {
+    font-size: 30px;
+  }
 `;
 export const StyledSpanSmall = styled.span`
   font-size: 30px;
   font-weight: 500;
   line-height: 50px;
   margin-bottom: 30px;
+  @media ${device.mobileS} {
+    font-size: 16px;
+  }
 `;
 export const StyledSectionWrapper = styled.div`
   width: 100%;

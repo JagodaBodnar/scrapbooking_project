@@ -23,7 +23,7 @@ const Contact = () => {
           <StyledUnderline></StyledUnderline>
         </StyledHeaderWrapper>
         <StyledIntroContainer>
-          Spodobała Ci się moje prace? Czekam na Twój kontakt! Skorzystaj z
+          Spodobały Ci się moje prace? Czekam na Twój kontakt! Skorzystaj z
           poniższego formularza, napisz maila, zadzwoń. Zapraszam również do
           odwiedzenia mojego instagrama.
         </StyledIntroContainer>

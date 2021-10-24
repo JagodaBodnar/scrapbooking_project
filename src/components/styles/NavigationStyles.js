@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FaAngleUp } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { device } from "../../globalStyles/Device";
 
 export const StyledNavigationContainer = styled.div`
   position: fixed;
@@ -30,6 +31,9 @@ export const StyledLogo = styled.div`
   font-weight: 400;
   cursor: default;
   font-family: "Ephesis", cursive;
+  @media ${device.mobileS} {
+    font-size: 30px;
+  } ;
 `;
 export const StyledNavigationLinks = styled(Link)`
   cursor: pointer;
@@ -42,6 +46,9 @@ export const StyledNavigationLinks = styled(Link)`
   &:hover {
     color: ${({ theme }) => theme.mainRed};
   }
+  @media ${device.mobileS} {
+    font-size: 20px;
+  } ;
 `;
 export const StyledButton = styled(Link)`
   position: fixed;
