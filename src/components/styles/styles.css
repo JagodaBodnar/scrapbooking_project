@@ -1,0 +1,16 @@
+.awssld__content {
+  background-color: transparent;
+}
+.awssld__bullets button {
+  width: 12px;
+  height: 12px;
+}
+.awssld__bullets .awssld__bullets--active {
+  transform: scale(1.2);
+  background-color: #f2635c;
+}
+
+.awssld {
+  --loader-bar-color: transparent;
+  --slider-height-percentage: 80%;
+}

@@ -5,17 +5,12 @@ import {
   StyledForm,
   StyledField,
   StyledTextArea,
-  StyledFieldCheckbox,
   StyledErrorName,
   StyledErrorMail,
-  StyledErrorSubject,
   StyledErrorTextArea,
-  StyledErrorCheckbox,
   StyledButtonWrapper,
   StyledButton,
   StyledInputContainer,
-  StyledCheckboxWrapper,
-  StyledPrivacyPolicy,
 } from "./styles/ContactFormStyles";
 
 const ContactForm = () => {
@@ -24,12 +19,7 @@ const ContactForm = () => {
     email: Yup.string()
       .email("Podany adres e-mail nie jest poprawny.")
       .required("Proszę o podanie adresu e-mail."),
-    subject: Yup.string().required("Proszę o podanie tematu."),
     message: Yup.string().required("Proszę o wpisanie treści wiadomości. "),
-    acceptTerms: Yup.boolean().oneOf(
-      [true],
-      "Musisz wyrazić zgodę na przetwarzanie danych."
-    ),
   });
   return (
     <>
@@ -71,18 +61,6 @@ const ContactForm = () => {
               />
             </StyledInputContainer>
             <StyledInputContainer>
-              <StyledErrorSubject>
-                <ErrorMessage name="subject" />
-              </StyledErrorSubject>
-              <StyledField
-                type="text"
-                name="subject"
-                placeholder="Temat wiadomości"
-                id="subject"
-                value={values.subject}
-              />
-            </StyledInputContainer>
-            <StyledInputContainer>
               <StyledErrorTextArea>
                 <ErrorMessage name="message" />
               </StyledErrorTextArea>
@@ -93,20 +71,6 @@ const ContactForm = () => {
                 placeholder="Treść wiadomości"
                 value={values.message}
               />
-            </StyledInputContainer>
-            <StyledInputContainer>
-              <StyledErrorCheckbox>
-                <ErrorMessage name="acceptTerms" />
-              </StyledErrorCheckbox>
-              <StyledCheckboxWrapper>
-                <StyledFieldCheckbox type="checkbox" name="acceptTerms" />
-                <label>
-                  Wyrażam zgodę na przetwarzanie moich danych zgodnie z
-                  <StyledPrivacyPolicy>
-                    polityką prywatności.
-                  </StyledPrivacyPolicy>
-                </label>
-              </StyledCheckboxWrapper>
             </StyledInputContainer>
             <StyledButtonWrapper>
               <StyledButton type="submit">Wyślij wiadomość</StyledButton>

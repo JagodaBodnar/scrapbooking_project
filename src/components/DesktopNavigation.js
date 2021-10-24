@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../assets/icons/logo.png";
 import { navigation } from "../data/navigationLinks";
 import { v4 as uuidv4 } from "uuid";
 import {
@@ -12,7 +11,7 @@ import "./styles/navigation.css";
 const DesktopNavigation = () => {
   return (
     <>
-      <StyledLogo src={logo} alt="GKEPB logo" />
+      <StyledLogo>PoterArt</StyledLogo>
       <StyledNavigationList>
         {navigation.categories.map((navItem) => {
           const navItemTransformed =

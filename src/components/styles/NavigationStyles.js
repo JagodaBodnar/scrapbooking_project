@@ -13,6 +13,9 @@ export const StyledNavigationContainer = styled.div`
   transition: 0.5s;
   background-color: ${({ navbarColor, theme }) =>
     navbarColor ? theme.white : theme.whiteTransparent};
+  border-bottom: 1px solid
+    ${({ navbarColor, theme }) =>
+      navbarColor ? "#ddd" : theme.whiteTransparent};
   width: 100%;
   z-index: 9999;
 `;
@@ -20,18 +23,24 @@ export const StyledNavigationList = styled.ul`
   margin-right: 5%;
 `;
 
-export const StyledLogo = styled.img`
+export const StyledLogo = styled.div`
   width: 50px;
   margin-left: 5%;
+  font-size: 45px;
+  font-weight: 400;
+  cursor: default;
+  font-family: "Ephesis", cursive;
 `;
 export const StyledNavigationLinks = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   color: ${({ theme }) => theme.textColor};
   margin-right: 20px;
-  font-size: 18px;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Ephesis", cursive;
   &:hover {
-    color: ${({ theme }) => theme.mainBlue};
+    color: ${({ theme }) => theme.mainRed};
   }
 `;
 export const StyledButton = styled(Link)`
@@ -40,7 +49,7 @@ export const StyledButton = styled(Link)`
   right: 3%;
   transition: 0.7s;
   visibility: hidden;
-  background-color: ${({ theme }) => theme.mainBlue};
+  background-color: ${({ theme }) => theme.mainRed};
   width: 30px;
   height: 30px;
   display: flex;

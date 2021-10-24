@@ -28,7 +28,7 @@ export const StyledInputContainer = styled.div`
 `;
 export const StyledError = styled.div`
   font-size: 13px;
-  color: #931536;
+  color: ${({ theme }) => theme.mainRed};
   border-radius: 3px;
   padding: 2px;
   position: absolute;
@@ -47,10 +47,6 @@ export const StyledErrorMail = styled(StyledError)`
     left: 50%;
   } ;
 `;
-export const StyledErrorSubject = styled(StyledError)`
-  top: 70%;
-  left: 10px;
-`;
 export const StyledErrorTextArea = styled(StyledError)`
   top: 90%;
   left: 10px;
@@ -64,13 +60,13 @@ export const StyledField = styled(Field)`
   margin: 10px;
   width: 100%;
   border: none;
-  border-bottom: ${({ theme }) => `2px solid ${theme.inputBorder}`};
+  border-bottom: ${({ theme }) => `1px solid ${theme.inputBorder}`};
   outline: none;
   padding-bottom: 5px;
   margin-bottom: 30px;
   font-size: 14px;
   &:focus {
-    border-bottom: ${({ theme }) => `2px solid ${theme.mainBlue}`};
+    border-bottom: ${({ theme }) => `1px solid ${theme.mainRed}`};
   }
 `;
 export const StyledTextArea = styled(StyledField)`
@@ -95,7 +91,7 @@ export const StyledCheckboxWrapper = styled.div`
 `;
 
 export const StyledPrivacyPolicy = styled.span`
-  color: ${({ theme }) => theme.mainBlue};
+  color: ${({ theme }) => theme.mainRed};
   margin-left: 3px;
   cursor: pointer;
 `;
@@ -107,9 +103,9 @@ export const StyledButtonWrapper = styled.div`
 
 export const StyledButton = styled.button`
   width: 80%;
-  background-color: ${({ theme }) => theme.mainBlue};
+  background-color: ${({ theme }) => theme.textColor};
   color: ${({ theme }) => theme.white};
-  border: ${({ theme }) => `1px solid ${theme.inputBorder}`};
+  border: none;
   cursor: pointer;
   padding: 5px;
   text-transform: uppercase;
@@ -117,7 +113,9 @@ export const StyledButton = styled.button`
   outline: none;
   margin-top: 30px;
   margin-left: 10px;
-
+  &:hover {
+    background-color: ${({ theme }) => theme.mainRed};
+  }
   @media ${device.mobile} {
     width: 40%;
   }

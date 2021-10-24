@@ -1,7 +1,0 @@
-.slick-prev:before,
-.slick-next:before {
-  color: #ddd;
-}
-.slick-arrow:hover::before {
-  color: #191a1c;
-}

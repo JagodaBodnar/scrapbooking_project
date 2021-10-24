@@ -2,10 +2,8 @@ import React, { useContext } from "react";
 import { ThemeProvider } from "styled-components";
 import Navigation from "../components/Navigation";
 import { mainGlobalStyles } from "../globalStyles/mainGlobalStyles";
-import About from "../views/About";
 import Contact from "../views/Contact";
 import Home from "../views/Home";
-import Offer from "../views/Offer";
 import Projects from "../views/Projects";
 import GlobalStyle from "../globalStyles/GlobalStyle";
 import styled from "styled-components";
@@ -25,8 +23,6 @@ const MainTemplate = () => {
         <StyledContentContainer>
           <Navigation />
           <Home />
-          <Offer />
-          <About />
           <Projects />
           <Contact />
           {cookieAccepted ? "" : <CookiesInformation />}

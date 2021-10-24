@@ -1,58 +1,55 @@
-import one from "../assets/images/image6.jpg";
+import one from "../assets/images/gallery1.png";
+import two from "../assets/images/gallery2.png";
+import three from "../assets/images/gallery3.png";
+import four from "../assets/images/gallery4.png";
+import five from "../assets/images/gallery5.png";
+import six from "../assets/images/gallery6.png";
+import seven from "../assets/images/gallery7.png";
+import ten from "../assets/images/gallery10.png";
+import thirteen from "../assets/images/gallery13.png";
+import sixteen from "../assets/images/gallery16.png";
 
 export const projects = [
   {
     id: 1,
-    project: one,
-    images: [one, one, one],
-    title: "Lorem ipsum dolor",
+    category: ["wszystkie", "album"],
+    main: one,
+    images: [one, two, three],
     show: false,
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
     id: 2,
-    project: one,
-    images: [one, one, one],
-    title: "Dolor sit amet",
+    category: ["wszystkie", "album"],
+    main: four,
+    images: [four, five, six],
     show: false,
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
     id: 3,
-    project: one,
-    images: [one, one, one],
-    title: "Consectetur adipiscing",
+    category: ["wszystkie", "kartka"],
+    main: seven,
+    images: [seven],
     show: false,
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
     id: 4,
-    project: one,
-    images: [one, one, one],
-    title: "Adipiscing elit",
+    category: ["wszystkie", "kartka"],
+    main: ten,
+    images: [ten],
     show: false,
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
     id: 5,
-    project: one,
-    images: [one, one, one],
-    title: "Sed do eiusmod",
+    category: ["wszystkie", "album"],
+    main: thirteen,
+    images: [thirteen],
     show: false,
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
     id: 6,
-    project: one,
-    images: [one, one, one],
-    title: "Incididunt ut labore",
+    category: ["wszystkie", "pudelko"],
+    main: sixteen,
+    images: [sixteen],
     show: false,
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
 ];

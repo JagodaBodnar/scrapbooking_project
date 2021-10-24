@@ -12,9 +12,7 @@ import {
   StyledCompanyAddressWrapper,
   StyledFormWrapper,
   StyledIntroContainer,
-  StyledMapContainer,
 } from "./styles/ContactStyles";
-import MapContainer from "../components/GoogleMap";
 
 const Contact = () => {
   return (
@@ -25,9 +23,9 @@ const Contact = () => {
           <StyledUnderline></StyledUnderline>
         </StyledHeaderWrapper>
         <StyledIntroContainer>
-          Masz pytania, chcesz rozpocząć współpracę? Czekamy na Twój kontakt!
-          Skorzystaj z poniższego formularza, napisz maila, zadzwoń lub odwiedź
-          nas osobiście.
+          Spodobała Ci się moje prace? Czekam na Twój kontakt! Skorzystaj z
+          poniższego formularza, napisz maila, zadzwoń. Zapraszam również do
+          odwiedzenia mojego instagrama.
         </StyledIntroContainer>
         <StyledContactInfoWrapper>
           <StyledCompanyAddressWrapper>
@@ -38,9 +36,6 @@ const Contact = () => {
           </StyledFormWrapper>
         </StyledContactInfoWrapper>
       </StyledSectionContainer>
-      <StyledMapContainer>
-        <MapContainer />
-      </StyledMapContainer>
     </>
   );
 };

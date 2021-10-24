@@ -1,26 +1,23 @@
 import React, { useContext } from "react";
-import { useMediaQuery } from "react-responsive";
 import {
   StyledNavigationContainer,
   StyledButton,
   StyledToTopIcon,
 } from "./styles/NavigationStyles";
-import MobileNavigation from "./MobileNavigation";
+
 import DesktopNavigation from "./DesktopNavigation";
 import RootContext from "../context/context";
 
 const Navigation = () => {
   const context = useContext(RootContext);
   const { navbarColor, displayButton } = context;
-  const isTabletOrMobile = useMediaQuery({
-    query: "(max-width: 768px)",
-  });
+
   return (
     <>
       <StyledNavigationContainer navbarColor={navbarColor}>
-        {isTabletOrMobile ? <MobileNavigation /> : <DesktopNavigation />}
+        <DesktopNavigation />
         <StyledButton
-          to="start"
+          to="home"
           smooth
           style={
             displayButton

@@ -6,7 +6,8 @@ export const StyledIntroContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 80%;
-  margin: 0 auto;
+  margin: 2% auto;
+  line-height: 30px;
   color: ${({ theme }) => theme.iconsBackground};
   text-align: center;
   @media ${device.laptop} {
@@ -19,8 +20,7 @@ export const StyledContactInfoWrapper = styled.div`
   justify-content: center;
   align-items: flex-start;
   width: 80%;
-  margin: 0 auto;
-
+  margin: 100px auto;
   @media ${device.laptop} {
     flex-direction: row;
   }
@@ -33,13 +33,4 @@ export const StyledCompanyAddressWrapper = styled.div`
 
 export const StyledFormWrapper = styled.div`
   flex: 2;
-`;
-
-export const StyledMapContainer = styled.div`
-  height: 350px;
-  position: relative;
-  filter: grayscale(1);
-  &:hover {
-    filter: grayscale(0);
-  }
 `;
