@@ -16,7 +16,7 @@ export const StyledSideContactContainer = withReveal(
 );
 
 export const StyledEmail = styled(MdEmail)`
-  font-size: 40px;
+  font-size: 30px;
   cursor: pointer;
   margin: 20px;
   color: ${({ theme }) => theme.textColor};
@@ -26,7 +26,7 @@ export const StyledEmail = styled(MdEmail)`
 `;
 
 export const StyledInstagram = styled(AiFillInstagram)`
-  font-size: 40px;
+  font-size: 30px;
   cursor: pointer;
   margin: 20px;
   color: ${({ theme }) => theme.textColor};
@@ -35,7 +35,7 @@ export const StyledInstagram = styled(AiFillInstagram)`
   }
 `;
 export const StyledPhone = styled(MdPhoneIphone)`
-  font-size: 40px;
+  font-size: 30px;
   cursor: pointer;
   margin: 20px;
   color: ${({ theme }) => theme.textColor};
@@ -47,4 +47,8 @@ export const StyledContactSide = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+`;
+
+export const StyledLabel = styled.label`
+  cursor: pointer;
 `;
